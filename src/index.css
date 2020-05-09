@@ -1,8 +1,7 @@
+
 body{
-  background-color: rgba(218, 127, 127, 0.356);
-
+  background-color: #4CAF50;
 }
-
 input[type=text], input[type=password], input[type=number] {
     width: 100%;
     padding: 12px 20px;   

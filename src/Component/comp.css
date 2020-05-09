@@ -6,13 +6,20 @@
 
 ul {
     list-style-type: none;
-    margin: 0;
+   position: absolute;
     padding: 0;
     width: 25%;
     background-color: #f1f1f1;
     position: fixed;
     height: 50%;
     overflow: auto;
+    margin-bottom:20px ;
+}
+
+
+ .verticalUL{
+    position: absolute;
+    margin-top: 20px;
 }
 
 li a {
@@ -64,7 +71,7 @@ li a:hover:not(.active) {
 }
 
 .search {
-    text-align-last: center;
+    text-align: center;
 }
 
 .line {
@@ -76,43 +83,14 @@ li a:hover:not(.active) {
 
 @media screen and (max-width: 500px) {
     .verticalUL {
-       width: 100%;
+       width: 87%;
        text-align: center;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .horizUL {
-        overflow: hidden;
-        position: relative;
-      }
-
-      .horizUL NavLink {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-      .horizUL a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .horizUL a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-  }
-
-/*----------------------------- inputs/ buttons -------------------------------------------------------------*/
 
 
-  /**************************Sign up***********************************/
-  
-  /*--------------------------------Dna Detection-----------------------------------------*/
+
 
 
 

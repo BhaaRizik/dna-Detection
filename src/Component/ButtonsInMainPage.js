@@ -1,4 +1,6 @@
 import React from "react";
+import DnaDetect from "../DNA_DETECTION/DNA_App";
+
 import '../index.css';
 import './comp.css';
 import {Link,NavLink} from 'react-router-dom';
@@ -11,9 +13,9 @@ function ButtonsInMainPage(props) {
     <div>
         <ul className = "verticalUL">
             <li> <a class = "active" href = {ncbiURL} > Connect to NCBI </a></li>
-            <li> <a href = "dnaDetection" > DNA Detection </a></li>
-            <li> <a href = "taxonomyTree" > Taxonomy Tree </a></li>
-            <li> <a href = "research" > Research </a></li>
+            <li> <Link to = "dnaDetection" > DNA Detection </Link></li>
+            <li> <Link to = "taxonomyTree" > Taxonomy Tree </Link></li>
+            <li> <Link to = "research" > Research </Link></li>
         </ul> 
     </div> 
 
