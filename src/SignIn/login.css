@@ -74,7 +74,7 @@ form {border: 3px solid #b3b3b3;
         to {transform: scale(1)}
       }
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         .forget, .cancelbtn {
            width: 100%;
            text-align: center;
