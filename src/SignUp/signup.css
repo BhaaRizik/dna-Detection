@@ -1,0 +1,25 @@
+.container {
+    padding: 16px;
+    background-color:#b3b3b3
+  }
+
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .cancelUP {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  .cancelUP, .signupbtn {
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+  @media screen and (max-width: 500px) {
+    .cancelUP, .signupbtn {
+       width: 100%;
+    }
+  }

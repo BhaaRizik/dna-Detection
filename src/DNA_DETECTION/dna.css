@@ -1,0 +1,82 @@
+.dna {
+  border: 3px solid #b3b3b3;
+  padding: 8px;
+  background-color: rgba(218, 127, 127, 0.055);
+
+  }
+.Browse {
+    width: 14%;
+    text-align: center;
+    position: relative;
+    margin-left: 40%;
+  }
+  body{
+    background-color: rgba(255, 255, 255, 0.055);
+
+  }
+  .filesName{
+    text-align: center;
+    position: relative;
+    margin-left: -12%;
+  }
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 35px;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    
+    .slider:hover {
+      opacity: 1;
+    }
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 35px;
+      height: 35px;
+      background: #4CAF50;
+      cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: #4CAF50;
+      cursor: pointer;
+    }
+  
+   .lenP, .distance,.microbeType{
+      width: 30%;
+      margin-left: 8px;  
+    }
+    
+   .len{
+      width: 50%;
+      float: right;
+    }
+  
+    .Condition{
+      position: relative;
+      margin-right: 80px;
+    }
+  
+    @media screen and (max-width: 500px) {
+      .lenP, .distance,.microbeType  {
+         width: 100%;
+         text-align: center;
+      }
+    }
+    .check{
+        width: 70%;  
+    }
+    .center{  
+        margin: 0;
+        position: relative;;
+        top: 50%;
+        left: 15%;
+       
+    }

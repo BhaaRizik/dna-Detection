@@ -1,0 +1,30 @@
+body{
+  background-color: rgba(218, 127, 127, 0.356);
+
+}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;   
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   
+  }
+  
+  button,input[type=file] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
