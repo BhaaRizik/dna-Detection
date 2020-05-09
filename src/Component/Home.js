@@ -21,7 +21,7 @@ class Home extends React.Component {
                   <br/>  
                  <BrowserRouter>      
                     <ButtonsInMainPage/>
-                    <Route  path="/dnaDetection" component={DnaDetect} />
+                          <Route  path="/dnaDetection" component={DnaDetect} />
                   
 
 
