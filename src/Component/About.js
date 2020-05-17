@@ -1,12 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import '../index.css';
 import './comp.css';
+import logo from './ZPJ-Logo.jpg';
 
 
 function About() {
     return ( 
-    <h1 > About </h1>
-        
+
+
+     <Fragment>
+
+        <img className="logo" src={logo} alt="Logo"/>
+     </Fragment>
     );
 
 }
