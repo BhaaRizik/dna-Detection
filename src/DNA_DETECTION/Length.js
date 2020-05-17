@@ -16,7 +16,7 @@ render(){
     
     return(
         <div className="lenP">
-            <label for="len">{this.props.label} Lenght of primers:</label><br/>
+            <label for="len">{this.props.labelM} Lenght of primers:</label><br/>
             <input type="range" min={15} max={30} value={this.state.value} className="slider" onChange={this.handleEventOnChange}/>
             <div className="sliderValue">{this.state.value}</div>
         </div>

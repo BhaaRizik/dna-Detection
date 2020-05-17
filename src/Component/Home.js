@@ -7,7 +7,7 @@ import LogIn from '../SignIn/login/LoginApp';
 
 import '../index.css';
 import './comp.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 
 
 class Home extends React.Component {
@@ -16,20 +16,13 @@ class Home extends React.Component {
               <div >
                  
                   <br/>
-                  <Search/>
-                 
-                  <BrowserRouter>      
-                    <ButtonsInMainPage/>
-                          <Route  path="/dnaDetection" component={DnaDetect} />
-                  
-
-
-                 </BrowserRouter>
-  
+                  <Search/>   
+                  <ButtonsInMainPage/>                        
               </div>   
-  
+
           );
     }
   }
 
+ 
   export default Home;

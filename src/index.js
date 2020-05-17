@@ -10,7 +10,7 @@ import DnaDetect from "./DNA_DETECTION/DNA_App";
 
 
 
-ReactDOM.render( <App/> , document.getElementById('root'));
+ ReactDOM.render( <App/> , document.getElementById('root'));
 //ReactDOM.render( <LoginApp/> , document.getElementById('root'));
 //ReactDOM.render( <Forgot/> , document.getElementById('root'));
 //ReactDOM.render( <SignUp/> , document.getElementById('root'));
