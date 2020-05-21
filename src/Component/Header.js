@@ -34,28 +34,25 @@ changeState = ()=>{
             <li><NavLink to="signUp">SignUp</NavLink></li>
           </ul>
 
-                  <Switch>
+           <Switch>              
+               <div className="container">
+                  <Route exact path="/">
+                     <HomePage/>
+                  </Route>
+                  <Route exact path="/about" >
+                     <AboutPage/>
+                  </Route>
+                  <Route exact path="/logIn">
+                     <LogInPage/>
+                  </Route>
+                  <Route exact path="/signUp">
+                     <SignUpPage/>
+                  </Route>
+               </div>
 
-                 
-<div className="container">
-   <Route exact path="/">
-      <HomePage/>
-   </Route>
-   <Route exact path="/about" >
-        <AboutPage/>
-   </Route>
-   <Route exact path="/logIn">
-      <LogInPage/>
-   </Route>
-   <Route exact path="/signUp">
-      <SignUpPage/>
-   </Route>
-</div>
-
-</Switch>
+            </Switch>
 
 </BrowserRouter>
-         // <h1>Header</h1>
         );
     }
 }

@@ -10,23 +10,23 @@ function ButtonsInMainPage(props) {
 
     const ncbiURL = "https://www.ncbi.nlm.nih.gov/";
     let match = useRouteMatch();
-    
-  
-    return ( 
-    
+    return (    
        <BrowserRouter> 
             <ul className = "verticalUL">
                 <li> <a className = "active" href = {ncbiURL} > Connect to NCBI </a></li>
                 <li> <Link to = {`${match.url}/dnaDetection`} > DNA Detection </Link></li>
-                <li> <Link to = "taxonomyTree" > Taxonomy Tree </Link></li>
-                <li> <Link to = "research" > Research </Link></li>
+                <li> <Link to ={ `${match.url}/taxonomyTree`} > Taxonomy Tree </Link></li>
+                <li> <Link to = { `${match.url}/research`}> Research </Link></li>
             </ul> 
-      
-
          <Switch>
-
-            <Route path={`${match.path}/dnaDetection`}>
+            <Route path={`${match.path}/dnaDetection`} component={Dna}>
                 <Dna/>
+            </Route>
+            <Route path={`${match.path}/taxonomyTree`}>
+                <taxonomyTree/>
+            </Route>
+            <Route path={`${match.path}/research`}>
+                <research/>
             </Route>
 
         </Switch>
@@ -37,8 +37,15 @@ function ButtonsInMainPage(props) {
 
     function Dna(){
    
-        let { topicId } = useParams();
-        return <h3>Requested topic ID: </h3>;
+        return <h3>DNA</h3>;
+}
+function taxonomyTree(){
+   
+    return <h3>taxonomyTree</h3>;
+}
+function research(){
+   
+    return <h3>research</h3>;
 }
 
 }
