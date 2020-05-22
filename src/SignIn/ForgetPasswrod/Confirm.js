@@ -9,7 +9,7 @@ function Confirm(props)
 
 return(
 <div>
-    <label for="Uname"><b>Confirm Password:</b></label>
+    <label htmlFor="Uname"><b>Confirm Password:</b></label>
     <input type="password" onChange={handleChange} placeholder="Confirm Password" required/>
 </div>
 );

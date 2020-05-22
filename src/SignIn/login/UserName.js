@@ -10,7 +10,7 @@ handleChange= (event) => {
 render(){    
     return(
         <div>
-            <label for="Uname"><b>Username:</b></label>
+            <label htmlFor="Uname"><b>Username:</b></label>
             <input type="text" onChange={this.handleChange} 
             placeholder="Username"  required/>
 

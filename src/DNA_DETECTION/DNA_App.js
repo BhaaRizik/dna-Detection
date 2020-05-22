@@ -28,15 +28,15 @@ class DNA_App extends React.Component{
            
             <div className="Condition">
             <div className="len">
-                <Len length={this.callbackLen}  labelM="max"/>
-                <Len length={this.callbackLen} labelM="min"/>
+                <Len length={this.callbackLen}  labelM="Max"/>
+                <Len length={this.callbackLen} labelM="Min"/>
              </div>   
-                <Distance distance={this.callbackDistance} labelM="max"/>
-                <Distance distance={this.callbackDistance} labelM="min"/>
+                <Distance distance={this.callbackDistance} labelM="Max"/>
+                <Distance distance={this.callbackDistance} labelM="Min"/>
                 <MType microbe={this.callbackMicrobe}/>
             </div>
            
-            <Browse/>
+            <Browse className="browse"/>
             <CheckButton className="check"/>
         </div>
     );

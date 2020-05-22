@@ -10,7 +10,7 @@ this.props.passHub(event.target.value);
 render(){
     return(
     <div>
-        <label for="pass"><b>Password:</b></label>
+        <label htmlFor="pass"><b>Password:</b></label>
         <input type="password" onChange={this.handleChange} 
         placeholder="Password"   required/>
     

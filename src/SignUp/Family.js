@@ -9,7 +9,7 @@ function handleChange(event){
 
 return(
 <div>
-    <label for="Lname"><b>Last Name:</b></label>
+    <label htmlFor="Lname"><b>Last Name:</b></label>
     <input type="text" onChange={handleChange} placeholder="Last Name" required/>
 </div>
 );

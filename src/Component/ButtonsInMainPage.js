@@ -11,39 +11,37 @@ function ButtonsInMainPage(props) {
     const ncbiURL = "https://www.ncbi.nlm.nih.gov/";
     let match = useRouteMatch();
     return (    
-       <BrowserRouter> 
-            <ul className = "verticalUL">
-                <li> <a className = "active" href = {ncbiURL} > Connect to NCBI </a></li>
-                <li> <Link to = {`${match.url}/dnaDetection`} > DNA Detection </Link></li>
-                <li> <Link to ={ `${match.url}/taxonomyTree`} > Taxonomy Tree </Link></li>
-                <li> <Link to = { `${match.url}/research`}> Research </Link></li>
-            </ul> 
-         <Switch>
-            <Route path={`${match.path}/dnaDetection`} component={Dna}>
-                <Dna/>
-            </Route>
-            <Route path={`${match.path}/taxonomyTree`}>
-                <taxonomyTree/>
-            </Route>
-            <Route path={`${match.path}/research`}>
-                <research/>
-            </Route>
+        <>
+        <ul className="verticalUL">
+            <li>{" "}<a className="active" href={ncbiURL}>  {" "} Connect to NCBI{" "}  </a> </li>
+            <li> {" "}<Link to={`${match.url}dnaDetection`}> DNA Detection </Link> </li>
+            <li>{" "} <Link to={`${match.url}taxonomyTree`}> Taxonomy Tree </Link> </li>
+            <li> {" "}<Link to={`${match.url}research`}> Research </Link></li>
+        </ul>
 
+        <Switch>
+          <Route exact path={`${match.path}dnaDetection`} component={Dna}>
+            <Dna />
+          </Route>
+          <Route path={`${match.path}taxonomyTree`}>
+            <TaxonomyTree />
+          </Route>
+          <Route path={`${match.path}research`}>
+            <Research />
+          </Route>
         </Switch>
-    </BrowserRouter>
- 
-
+      </>
     );
 
     function Dna(){
    
-        return <h3>DNA</h3>;
+        return <DnaDetect/>;
 }
-function taxonomyTree(){
+function TaxonomyTree(){
    
     return <h3>taxonomyTree</h3>;
 }
-function research(){
+function Research(){
    
     return <h3>research</h3>;
 }

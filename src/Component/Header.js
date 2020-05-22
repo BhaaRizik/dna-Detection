@@ -13,6 +13,24 @@ import {BrowserRouter,NavLink,Switch,Route} from 'react-router-dom';
 
 class Header extends React.Component{
 
+
+   myFunction() {
+ 
+      let x = document.getElementById("myTopnav");
+      console.log( "init "+x.className);
+
+      if (x.className === "horizUL") {
+         x.className += " responsive";
+         console.log("**** "+ x.className);
+       } else {
+         x.className = "horizUL";
+         console.log( x.className);
+
+       }
+      
+    }
+
+
 state={
     isHome:false
 }
@@ -27,35 +45,50 @@ changeState = ()=>{
 
        
   <BrowserRouter>     
-         <ul className="horizUL"> 
-            <li><NavLink onClick={this.changeState} to="/">Home</NavLink></li>
-            <li><NavLink to="about">About</NavLink></li>
-            <li ><NavLink to="logIn">Login</NavLink></li>
+
+
+         <ul className="horizUL" id="myTopnav">  
+           <li> <NavLink  className="home" onClick={this.changeState} to="/">Home</NavLink> </li>
+            <li><NavLink to="about">About  </NavLink></li>
+            <li ><NavLink to="logIn">Login </NavLink></li>
             <li><NavLink to="signUp">SignUp</NavLink></li>
+           
+
           </ul>
 
-           <Switch>              
-               <div className="container">
-                  <Route exact path="/">
-                     <HomePage/>
-                  </Route>
-                  <Route exact path="/about" >
-                     <AboutPage/>
-                  </Route>
-                  <Route exact path="/logIn">
-                     <LogInPage/>
-                  </Route>
-                  <Route exact path="/signUp">
-                     <SignUpPage/>
-                  </Route>
-               </div>
+          <a className="icon" onClick={() =>this.myFunction()} >
+         <i className="fa fa-bars"></i>
+         
+      </a>
 
-            </Switch>
+
+                       
+      <div className="container">
+      <Switch>
+        <Route exact path="/about">
+          <AboutPage />
+        </Route>
+        <Route exact path="/logIn">
+          <LogInPage />
+        </Route>
+        <Route exact path="/signUp">
+          <SignUpPage />
+        </Route>
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+    </div>
+
+            
 
 </BrowserRouter>
         );
     }
+   
 }
+
+
 
 function HomePage(){
     return( <Home/>);

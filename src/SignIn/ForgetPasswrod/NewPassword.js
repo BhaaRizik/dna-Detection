@@ -9,7 +9,7 @@ function NewPassword(props)
 
 return(
 <div>
-    <label for="Uname"><b>New Password:</b></label>
+    <label htmlFor="Uname"><b>New Password:</b></label>
     <input type="password" onChange={handleChange}  placeholder="New Password" required/>
 </div>
 );

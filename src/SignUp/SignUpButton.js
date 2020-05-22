@@ -4,7 +4,7 @@ function SignUpButton()
 {
     return(
         <div>
-          <button type="submit" class="signupbtn">Sign Up</button>
+          <button type="submit" className="signupbtn">Sign Up</button>
         </div>
     );
 }

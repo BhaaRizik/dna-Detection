@@ -51,7 +51,7 @@ render()
                 <ConfirmPassword confirm={this.callbackConfirm}/>
                 <br/>
                 <br/>
-                    <div class="clearfix">
+                    <div className="clearfix">
                                 <Cancel/>
                                 <SignUpButton/>
                     </div>

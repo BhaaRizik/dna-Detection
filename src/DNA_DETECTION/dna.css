@@ -5,10 +5,11 @@
 
  }
 .Browse {
-    width: 14%;
-    text-align: center;
+    width: 90%;
+      text-align: center;
     position: relative;
-    margin-left: 40%;
+    margin-left: 5%;
+  
   }
   body{
     background-color: rgba(255, 255, 255, 0.055);
@@ -17,7 +18,7 @@
   .filesName{
     text-align: center;
     position: relative;
-    margin-left: -12%;
+    margin-left: 37%;
   }
     .slider {
       -webkit-appearance: none;
@@ -50,24 +51,30 @@
     }
   
    .lenP, .distance,.microbeType{
-      width: 30%;
+  
       margin-left: 8px;  
     }
     
    .len{
       width: 50%;
-      float: right;
+      float: center;
     }
   
     .Condition{
       position: relative;
-      margin-right: 80px;
     }
   
     @media screen and (max-width: 500px) {
-      .lenP, .distance,.microbeType  {
+      .len, .distance,.microbeType,.Condition,.check
+        {
          width: 100%;
          text-align: center;
+      }
+      .Browse{
+        width: 90%;
+      }
+      .filesName{
+        margin-left: 8%;
       }
     }
     .check{

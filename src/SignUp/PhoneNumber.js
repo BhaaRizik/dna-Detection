@@ -9,7 +9,7 @@ function PhoneNumber(props){
 
 return(
 <div>
-<label for="phone"><b>Phone number:</b></label>
+<label htmlFor="phone"><b>Phone number:</b></label>
     <input type="number" onChange={handleChange} min="0" placeholder="Phone number" required/>
 
 </div>

@@ -8,7 +8,7 @@ function Name(props)
 
 return(
 <div>
-    <label for="Fname"><b>First Name:</b></label>
+    <label htmlFor="Fname"><b>First Name:</b></label>
     <input type="text" onChange={handleChange} placeholder="First Name" required/>
 </div>
 );

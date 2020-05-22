@@ -25,7 +25,7 @@ render(){
 return(
 <div>
 <h1> {this.state.userName} {this.state.password}</h1>
-    <form class="modal-content animate">
+    <form className="modal-content animate">
 
         <Username userHub={this.callbackUsername}/>
         <Password passHub={this.callbackPassword}/>
@@ -33,7 +33,7 @@ return(
         <Submit/>
         <Rememberme/>
        
-        <div class="container">
+        <div className="container">
             <Cancel/>
             <ForgetPass/>
         </div>

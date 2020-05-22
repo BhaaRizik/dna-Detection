@@ -3,7 +3,7 @@ import React from "react";
 function Cancel() {
 return(
 <div>
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="button" className="cancelbtn">Cancel</button>
 </div>
 
 );
