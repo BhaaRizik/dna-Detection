@@ -8,6 +8,7 @@ import ForgetPass from "./Forget"
 
 class Hub extends React.Component {
 
+    
 state={userName:"Log", password : "In"}
 
 callbackUsername=(user)=>{
@@ -35,7 +36,13 @@ return(
        
         <div className="container">
             <Cancel/>
-            <ForgetPass/>
+
+
+
+        
+        <ForgetPass/>
+
+
         </div>
     </form> 
 </div>
