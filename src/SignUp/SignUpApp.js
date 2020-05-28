@@ -37,6 +37,10 @@ class SignUpApp extends React.Component{
         this.setState({conf: con});
     }
 
+signup(){
+
+}
+
 render()
 {
     return(
@@ -53,7 +57,9 @@ render()
                 <br/>
                     <div className="clearfix">
                                 <Cancel/>
-                                <SignUpButton/>
+                                
+                                <button type="submit" className="signupbtn" onClick={this.signup.bind(this)}>Sign Up</button>
+
                     </div>
             </form>
         </div>

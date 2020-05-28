@@ -1,13 +1,15 @@
 import React from "react";
 
+import {useHistory} from "react-router-dom";
+
+
 function Cancel() {
-return(
-<div>
-    <button type="button" className="cancelUP">Cancel</button>
-</div>
-
-);
-
-}
+    let history = useHistory()
+    return (
+      <button type="button" className="cancelUP" onClick={() => history.goBack()}>
+       Cancel
+      </button>
+    )
+  }
 
 export default Cancel;
