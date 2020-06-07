@@ -69,6 +69,10 @@ li a:hover:not(.active) {
 }
 
 
+.goRight{
+  float: right;
+}
+
 @media screen and (max-width: 500px) {
     .verticalUL {
        width: 100%;  

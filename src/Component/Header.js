@@ -50,10 +50,10 @@ changeState = ()=>{
          <ul className="horizUL" id="myTopnav">  
            <li> <NavLink  className="home" onClick={this.changeState} to="/">Home</NavLink> </li>
             <li><NavLink to="about">About  </NavLink></li>
-            <li ><NavLink to="logIn">Login </NavLink></li>
-            <li><NavLink to="signUp">SignUp</NavLink></li>
-           
-
+            <div className="goRight">
+                <li ><NavLink  to="logIn">Login </NavLink></li>
+                <li><NavLink   to="signUp">SignUp</NavLink></li>
+            </div>
           </ul>
 
           <a className="icon" onClick={() =>this.myFunction()} >
