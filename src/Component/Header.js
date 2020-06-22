@@ -46,22 +46,24 @@ changeState = ()=>{
        
   <BrowserRouter>     
 
-
-         <ul className="horizUL" id="myTopnav">  
+<div id="myTopnav">
+         <ul className="horizUL" >  
            <li> <NavLink  className="home" onClick={this.changeState} to="/">ZBJ</NavLink> </li>
-            <li><NavLink to="about">About  </NavLink></li>
-            <div className="goRight">
-                <li ><NavLink  to="logIn">Login </NavLink></li>
-                <li><NavLink   to="signUp">SignUp</NavLink></li>
-            </div>
+         
+               <li><NavLink to="about">About</NavLink></li>
+          
+                <li><NavLink  to="logIn"  className="goRight" className="goRightLogin">Login </NavLink></li>
+                <li><NavLink   to="signUp"  className="goRight" className="goRightSignup">SignUp</NavLink></li>      
+           
+        
           </ul>
 
-          <a className="icon" onClick={() =>this.myFunction()} >
-         <i className="fa fa-bars"></i>
          
-      </a>
-
-
+      </div>
+      <a className="icon" onClick={() =>this.myFunction()} >
+               <i className="fa fa-bars"></i>
+         
+           </a>
                        
       <div className="container">
       <Switch>

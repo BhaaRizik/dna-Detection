@@ -70,6 +70,7 @@ console.log(this.props.maxLen+"+"+this.props.minLen+"+"
               })
               .catch(function (error) {
                 console.log(error);
+                alert("Problem at the server\nTry later\n"+error);
               }); 
 
   return results;
