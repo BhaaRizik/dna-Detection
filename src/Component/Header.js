@@ -48,7 +48,7 @@ changeState = ()=>{
 
 
          <ul className="horizUL" id="myTopnav">  
-           <li> <NavLink  className="home" onClick={this.changeState} to="/">Home</NavLink> </li>
+           <li> <NavLink  className="home" onClick={this.changeState} to="/">ZBJ</NavLink> </li>
             <li><NavLink to="about">About  </NavLink></li>
             <div className="goRight">
                 <li ><NavLink  to="logIn">Login </NavLink></li>

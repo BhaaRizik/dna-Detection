@@ -10,6 +10,7 @@ state={
 handleEventOnChange = (event) =>{
     this.setState({value:event.target.value});
     this.props.length(event.target.value);
+   // console.log((event.target.value))
 }
 ///this.state.value => The lenght of primers
 render(){

@@ -10,7 +10,7 @@ function handleChange(event){
 
     return(
         <div className="microbeType">
-                <label for="Type">Microbee Type:</label>
+                <label htmlFor="Type">Microbee Type:</label>
                 <input type="text" onChange={handleChange} id="mic"  />
         </div>
     );
