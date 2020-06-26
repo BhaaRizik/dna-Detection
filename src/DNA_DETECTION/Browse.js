@@ -16,6 +16,16 @@ export default class Browse extends React.Component {
         this.fileUploaderRef = React.createRef();
     }
 
+    downloadTxtFile= (dna_results)=> {
+        console.log("downloadTxtFile - "+dna_results)
+        const element = document.createElement("a");
+        const file = new Blob([dna_results], {type: 'text/plain'});
+        element.href = URL.createObjectURL(file);
+        element.download = "Microbe detection by PCR - Results.txt";
+        document.body.appendChild(element); // Required for this to work in FireFox
+        element.click();
+      }
+
 
 handleFileChosen = async (file) => {
     return new Promise((resolve, reject) => {
@@ -30,6 +40,10 @@ handleFileChosen = async (file) => {
       delay=(ms) =>{
         return new Promise( resolve => setTimeout(resolve, ms) );
     }
+
+
+       
+ 
 
 
 readAllFiles = async (AllFiles) => {
@@ -56,6 +70,8 @@ console.log("maxLen = "+this.props.maxLen)
 console.log("maxDis = "+this.props.maxDistance)
 console.log("maxDis = "+this.props.minDistance)
 console.log("microbe = "+this.props.MicrobeType)
+console.log("file number = "+this.state.files.length)
+
 
 console.log(this.props.maxLen+"+"+this.props.minLen+"+"
 +this.props.maxDistance+"+"+this.props.minDistance+"+"
@@ -64,9 +80,15 @@ console.log(this.props.maxLen+"+"+this.props.minLen+"+"
 
             axios.get('http://52.14.247.16:5000/start/'+ this.props.maxLen+"+"+this.props.minLen+"+"
             +this.props.maxDistance+"+"+this.props.minDistance+"+"
-            +this.props.MicrobeType)
-              .then(function (response) {
-                console.log(response);
+            +this.props.MicrobeType+"+"+this.state.files.length)
+              .then( (response) => {
+              console.log(response);
+              //alert(response.data.value);
+              console.log(response.data.value);
+             // document.getElementById("output").innerHTML =response.data.value;
+
+             this.downloadTxtFile(response.data.value);
+
               })
               .catch(function (error) {
                 console.log(error);
@@ -74,24 +96,6 @@ console.log(this.props.maxLen+"+"+this.props.minLen+"+"
               }); 
 
   return results;
-/*
-var myHeaders = new Headers();
-myHeaders.append("Content-Type", "text/plain");
-
-var raw = "ahha\n1";
-
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
-
-fetch("https://52.14.247.16:5000/process", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-*/
 
   }
 
@@ -149,7 +153,9 @@ fetch("https://52.14.247.16:5000/process", requestOptions)
         return (
             <div className="Browse">
                 <label>Insert DNA Files:</label>
-                <input type="file" multiple="multiple" id="file" ref={this.fileUploaderRef} onChange={this.fileUpload}/>
+                <p id="output">bhaa</p>
+                <input type="file" multiple="multiple" id="file" ref={this.fileUploaderRef} 
+                                                                  onChange={this.fileUpload}/>
                 <table className="filesName">
                     <tbody>
                     {
@@ -167,7 +173,7 @@ fetch("https://52.14.247.16:5000/process", requestOptions)
                     }
                     </tbody>
                 </table>
-                <button onClick={() => this.readAllFiles(this.state.files)}>Check</button>
+                <button onClick={() => this.readAllFiles(this.state.files)} id="check">Check</button>
             </div>
         );
     }

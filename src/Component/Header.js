@@ -51,10 +51,10 @@ changeState = ()=>{
            <li> <NavLink  className="home" onClick={this.changeState} to="/">ZBJ</NavLink> </li>
          
                <li><NavLink to="about">About</NavLink></li>
-          
-                <li><NavLink  to="logIn"  className="goRight" className="goRightLogin">Login </NavLink></li>
-                <li><NavLink   to="signUp"  className="goRight" className="goRightSignup">SignUp</NavLink></li>      
-           
+
+                <li><NavLink  to="logIn"  className="goRight">Login </NavLink></li>
+                <li><NavLink  to="signUp"  className="goRight" >SignUp</NavLink></li>      
+               
         
           </ul>
 
