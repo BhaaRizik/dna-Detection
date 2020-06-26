@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
+import Login from '../SignIn/LoginApp'
 
-import {useHistory} from "react-router-dom";
+import { useHistory } from 'react-router-dom'
 
+function Cancel () {
+  //  let history = useHistory()
+  return (
+    <button type='button' className='cancelUP'>
+      Cancel
+    </button>
+  )
+}
 
-function Cancel() {
-    let history = useHistory()
-    return (
-      <button type="button" className="cancelUP" onClick={() => history.goBack()}>
-       Cancel
-      </button>
-    )
-  }
-
-export default Cancel;
+export default Cancel

@@ -1,96 +1,120 @@
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: device-width;
+  zoom: 1;
 }
 
-form {border: 3px solid #b3b3b3;
-    padding: 8px;
-    }
-    
- 
-    
-      .container {
-        padding-bottom: 50px;
-        padding-top:0px ;
-        background-color:#f5f0f0
-       
-      }
+form {
+  border: 3px solid #b3b3b3;
+  padding: 8px;
+}
 
-      .forget{
-        width: auto;
-        padding: 10px 18px;
-        background-color: #4CAF50;
-        height: auto;
-        float:right;
-       
-      }
-      .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #f44336;
-        height: auto;
-    
-      
-      }
-      
-      .psw {
-        width: auto;
-        float: right;
-        padding: 10px 18px;
-        color: cornsilk;
-      }
-    
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        padding-top: 60px;
-      }
-      
-      /* Modal Content/Box */
-      .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-      }
-    
-    
-      .animate {
-        -webkit-animation: animatezoom 0.6s;
-        animation: animatezoom 0.6s
-      }
-      
-      @-webkit-keyframes animatezoom {
-        from {-webkit-transform: scale(0)} 
-        to {-webkit-transform: scale(1)}
-      }
-        
-      @keyframes animatezoom {
-        from {transform: scale(0)} 
-        to {transform: scale(1)}
-      }
+.container {
+  padding-bottom: 50px;
+  padding-top: 0px;
+  background-color: #f5f0f0;
+}
 
-      @media screen and (max-width: 600px) {
-        .forget, .cancelbtn {
-           width: 100%;
-           text-align: center;
-        }
-        .container{
-          padding-bottom: 103px;
-          padding-top: 4px;
-          padding-left: 3px;
-          padding-right: 3px;
+.forget {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #4caf50;
+  height: auto;
+  float: right;
+}
+.signupbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  height: auto;
+}
 
-        }
-      
-      }
-    
+.psw {
+  width: auto;
+  float: right;
+  padding: 10px 18px;
+  color: cornsilk;
+}
+
+.title {
+  color: #e3e9e3;
+  font-family: Sans-serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h1 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 35px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forget,
+  .signupbtn {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    padding-bottom: 103px;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  #myTopnav {
+    width: 100%;
+  }
+}
+
+.logout {
+  width: 20%;
+  position: relative;
+}

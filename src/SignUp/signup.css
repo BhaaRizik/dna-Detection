@@ -1,34 +1,33 @@
-
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: device-width;
+  zoom: 1;
 }
 
 .container {
-    padding: 16px;
-    background-color:#b3b3b3
-  }
+  padding: 16px;
+  background-color: #b3b3b3;
+}
 
-  /* Clear floats */
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .cancelUP {
-    padding: 14px 20px;
-    background-color: #f44336;
-  }
-  .cancelUP, .signupbtn {
-    float: left;
-    width: 50%;
-    height: auto;
-  }
+/* Clear floats */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.cancelUP {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.cancelUP,
+.signupbtn {
+  float: left;
+  width: 50%;
+  height: auto;
+}
 
-
-  
-  @media screen and (max-width: 600px) {
-    .cancelUP, .signupbtn {
-       width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  .cancelUP,
+  .signupbtn {
+    width: 100%;
   }
+}
