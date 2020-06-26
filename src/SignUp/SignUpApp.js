@@ -65,7 +65,7 @@ class SignUpApp extends React.Component {
             <div className='clearfix'>
               <button
                 type='submit'
-                className='signupbtnn'
+                className='cancelUP'
                 onClick={this.signup.bind(this)}
               >
                 Cancel{' '}
@@ -73,7 +73,7 @@ class SignUpApp extends React.Component {
 
               <button
                 type='submit'
-                className='signupbtn'
+                className='signupbtnn'
                 onClick={this.signup.bind(this)}
               >
                 Sign Up
