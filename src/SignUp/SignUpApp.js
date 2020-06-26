@@ -51,10 +51,9 @@ class SignUpApp extends React.Component {
   render () {
     return (
       <div>
-        <h4>Sign Up Form</h4>
-
         {this.state.isSignup === false && (
           <form>
+            <h4>Sign Up Form</h4>
             <FirstName fname={this.callbackFname} />
             <LastName lname={this.callbackLname} />
             <PhoneNumber phone={this.callbackPhone} />
@@ -66,7 +65,7 @@ class SignUpApp extends React.Component {
             <div className='clearfix'>
               <button
                 type='submit'
-                className='signupbtn'
+                className='signupbtnn'
                 onClick={this.signup.bind(this)}
               >
                 Cancel{' '}

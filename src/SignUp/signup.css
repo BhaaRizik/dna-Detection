@@ -8,6 +8,10 @@
   background-color: #b3b3b3;
 }
 
+form {
+  position: relative;
+  margin-bottom: 500px;
+}
 /* Clear floats */
 .clearfix::after {
   content: '';
@@ -18,8 +22,11 @@
   padding: 14px 20px;
   background-color: #f44336;
 }
+.signupbtnn {
+  background-color: #4caf50;
+}
 .cancelUP,
-.signupbtn {
+.signupbtnn {
   float: left;
   width: 50%;
   height: auto;
@@ -27,7 +34,7 @@
 
 @media screen and (max-width: 600px) {
   .cancelUP,
-  .signupbtn {
+  .signupbtnn {
     width: 100%;
   }
 }
