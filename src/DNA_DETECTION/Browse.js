@@ -54,7 +54,7 @@ export default class Browse extends React.Component {
       // const response = await Promise.axios.post(
       postR.push(
         axios.post(
-          'https://52.14.247.16:5000/process',
+          'http://52.14.247.16:5000/process',
           { result },
           { headers: { 'Content-Type': 'application/json' } }
         )
@@ -90,7 +90,7 @@ export default class Browse extends React.Component {
   getRequest = async () => {
     axios
       .get(
-        'https://52.14.247.16:5000/start/' +
+        'http://52.14.247.16:5000/start/' +
           this.props.maxLen +
           '+' +
           this.props.minLen +

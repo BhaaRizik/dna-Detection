@@ -72,7 +72,7 @@ class Hub extends React.Component {
           this.state.loginState === false &&
           this.state.signup === false && (
             <form className='modal-content animate'>
-              <h1 className='title'>Welcom to ZPJ site</h1>
+              <h1 className='title'>Welcome to ZBJ site</h1>
               <Username userHub={this.callbackUsername} />
               <Password passHub={this.callbackPassword} />
 

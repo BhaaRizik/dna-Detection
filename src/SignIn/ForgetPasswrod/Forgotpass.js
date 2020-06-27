@@ -24,8 +24,8 @@ class Forgotpass extends React.Component {
         <form>
           <h2>Forgot password?</h2>
           <Email emailForgot={this.callbackEmail} />
-          <Newpassword newPassword={this.callbackNewpass} />
-          <Confirm confirm={this.callbackConfirm} />
+          {/* <Newpassword newPassword={this.callbackNewpass} />
+          <Confirm confirm={this.callbackConfirm} />*/}
           <Reset />
         </form>
       </div>
